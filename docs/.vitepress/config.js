@@ -2,7 +2,7 @@ export default {
   title: 'Rollup Docs ',
   description: 'compile JS code',
   themeConfig: {
-    logo: '/rollup-logo.svg',
+    logo: '/guide/rollup-logo.svg',
     nav: [
       { text: 'guide', link: '/guide/' },
       { text: 'repl', link: 'https://rollupjs.org/repl/' },
