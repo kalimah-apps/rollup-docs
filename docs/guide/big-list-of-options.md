@@ -601,7 +601,7 @@ const foo = 42;
 exports.foo = foo;
 ```
 
-Note: The `__esModule` flag in the example can be prevented via the [`output.esModule`](https://rollupjs.org/guide/en/#outputesmodule) option.
+Note: The `__esModule` flag in the example can be prevented via the [`output.esModule`](#outputesmodule) option.
 
 ### output.hoistTransitiveImports
 
@@ -1045,7 +1045,7 @@ console.log(main.default); // 42
 
 Type: `string`<br> CLI: `--preserveModulesRoot <directory-name>`
 
-A directory path to input modules that should be stripped away from [`output.dir`](#outputdir) path while [`output.preserveModules`](guide/en#outputpreservemodules) is `true`.
+A directory path to input modules that should be stripped away from [`output.dir`](#outputdir) path while [`output.preserveModules`](#outputpreservemodules) is `true`.
 
 For example, given the following configuration:
 
@@ -1327,7 +1327,7 @@ export default {
 
 Type: `boolean`<br> CLI: `--esModule`/`--no-esModule`<br> Default: `true`
 
-Whether to add a `__esModule: true` property when generating exports for non-ES formats. This property signifies that the exported value is the namespace of an ES module and that the default export of this module corresponds to the `.default` property of the exported object. By default, Rollup adds this property when using [named exports mode](#outputexports) for a chunk. See also [`output.interop`](https://rollupjs.org/guide/en/#outputinterop).
+Whether to add a `__esModule: true` property when generating exports for non-ES formats. This property signifies that the exported value is the namespace of an ES module and that the default export of this module corresponds to the `.default` property of the exported object. By default, Rollup adds this property when using [named exports mode](#outputexports) for a chunk. See also [`output.interop`](#outputinterop).
 
 ### output.exports
 
